@@ -44,9 +44,7 @@ function handleText(textNode)
 	v = v.replace(/\b(M|m)ust not\b/g, "$1ustn't");
 	v = v.replace(/\b(G|g)od\b/g, "The Good Lord");
 	v = v.replace(/\b(coca-*cola|pepsi|dr *pepper|mountain *dew)/ig, "coke");
+	v = v.replace(/\b(stupid|idiot|fool)/ig, "$1( bless their heart )");
 	v = v.replace(/ing\b/g, "in'");
-	
 	textNode.nodeValue = v;
 }
-
-
