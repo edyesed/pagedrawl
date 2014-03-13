@@ -38,6 +38,7 @@ function handleText(textNode)
 	v = v.replace(/\b(U|u)sed to\b/g, "$1sedter");
 	v = v.replace(/\b(H|h)ave (T|t)o\b/g, "$1afta");
 	v = v.replace(/\b(H|h)a(s|d) to\b/g, "$1a$2ta");
+	v = v.replace(/\b(W|w)ant to\b/g, "$1anna");
 	v = v.replace(/\b(H|h)a(s|d)\b/g, "got");
 	v = v.replace(/\b(W|w)ere\b/g, "was");
 	v = v.replace(/\b(M|m)ust not\b/g, "$1ustn't");
