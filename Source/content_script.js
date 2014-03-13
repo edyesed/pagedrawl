@@ -34,13 +34,16 @@ function handleText(textNode)
 
 	v = v.replace(/\b(y|Y)ou all\b/g, "$1'all");
 	v = v.replace(/\bthink/ig, "reckon");
-	v = v.replace(/\bporch\b/g, "veranda");
 	v = v.replace(/\b(vokda|scotch|tequila)\b/g, "bourbon");
 	v = v.replace(/\b(U|u)sed to\b/g, "$1sedter");
 	v = v.replace(/\b(H|h)ave (T|t)o\b/g, "$1afta");
 	v = v.replace(/\b(H|h)a(s|d) to\b/g, "$1a$2ta");
 	v = v.replace(/\b(H|h)a(s|d)\b/g, "got");
 	v = v.replace(/\b(W|w)ere\b/g, "was");
+	v = v.replace(/\b(M|m)ust not\b/g, "$1ustn't");
+	v = v.replace(/\b(G|g)od\b/g, "The Good Lord");
+	v = v.replace(/\b(coca-*cola|pepsi|dr *pepper|mountain *dew)/ig, "coke");
+	v = v.replace(/ing\b/g, "in'");
 	
 	textNode.nodeValue = v;
 }
