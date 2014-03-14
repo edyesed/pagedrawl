@@ -45,6 +45,6 @@ function handleText(textNode)
 	v = v.replace(/\b(G|g)od\b/g, "The Good Lord");
 	v = v.replace(/\b(coca-*cola|pepsi|dr *pepper|mountain *dew)/ig, "coke");
 	v = v.replace(/\b(stupid|idiot|fool)(s*)/ig, "$1$2( bless their heart )");
-	v = v.replace(/(?!str)(.{3})ing\b/ig, "$1in'");
+	v = v.replace(/(?!(str| th))(.{3})ing\b/ig, "$2in'");
 	textNode.nodeValue = v;
 }
